@@ -8,7 +8,8 @@ import Blogpostcover from '../../components/blogpostcover/blogpostcover'
 
 import './blog.scss'
 
-const apiKey = process.env.API_KEY ||  development.env.API_KEY
+const apiKey = '747a0cd4-4b9d-46d3-a970-5c9eae6895f6'
+// const apiKey = process.env.API_KEY || development.env.API_KEY
 
 export default function Blog() {
 
