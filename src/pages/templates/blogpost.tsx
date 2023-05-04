@@ -1,7 +1,7 @@
 import React from 'react'
 import { PageViewer, cleanPage, types } from 'react-bricks/frontend'
 import { useReactBricksContext } from 'react-bricks/frontend'
-import Layout from '../../components/layout'
+import Layout from '../../components/layout/layout'
 import Seo from '../../components/seo'
 import ErrorNoKeys from '../../components/errorNoKeys'
 import ErrorNoHeader from '../../components/errorNoHeader'
