@@ -48,19 +48,19 @@ const Blogpost: React.FC<ReactBricksPageProps> = ({
             lang={page.meta.language}
           />
 
-          {headerOk && !errorHeader ? (
+          {/* {headerOk && !errorHeader ? (
             <PageViewer page={headerOk} showClickToEdit={false} />
           ) : (
             <ErrorNoHeader />
-          )}
+          )} */}
 
           <PageViewer page={pageOk} />
-
+{/* 
           {footerOk && !errorFooter ? (
             <PageViewer page={footerOk} showClickToEdit={false} />
           ) : (
             <ErrorNoFooter />
-          )}
+          )} */}
         </>
       )}
       {errorKeys && <ErrorNoKeys />}
