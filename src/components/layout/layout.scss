@@ -1,0 +1,52 @@
+.navigation{
+
+    header{
+        width: 100%;
+    }
+
+    a{
+        color: aliceblue;
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+
+        li{
+            width: 100%;
+            border-radius: 1rem;
+            padding: 0.1rem;
+
+            display: flex;
+            justify-content: center;
+        }
+        
+        #space{
+            background-color:darkred;
+        }
+   
+        #blog{
+            background-color: blue;
+        }
+   
+        #work{
+            background-color:rgb(100, 255, 0);
+        }
+        
+    }
+
+    #logo{
+        display: flex;
+        justify-content: center;
+        border-radius: 1rem;
+        padding: 0.1rem;
+
+        background-color:lavenderblush;
+
+        a{
+            color: black;
+        }
+
+    }
+}

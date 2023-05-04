@@ -1,0 +1,11 @@
+.media{
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   
+   img{
+      object-fit:contain;
+      max-height: 60vh;
+      height: 100%;
+   }
+}

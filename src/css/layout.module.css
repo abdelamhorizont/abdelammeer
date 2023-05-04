@@ -10,3 +10,8 @@
 .childrenContainer {
   margin-bottom: auto;
 }
+
+.logo{
+  position: fixed;
+  color: blue;
+}

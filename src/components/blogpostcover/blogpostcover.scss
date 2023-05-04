@@ -1,0 +1,21 @@
+.blogpostcover{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    margin-bottom: 0.25rem;
+
+    .headline{
+        position: absolute;
+        padding: 0.4rem 0.6rem;
+        margin-bottom: 1.5rem;
+
+        font-variation-settings: "wdth" 125;
+        background-color: blue;
+        border-radius: 2rem;
+    }
+
+    .media{
+        border-radius: 1rem;
+    }
+}

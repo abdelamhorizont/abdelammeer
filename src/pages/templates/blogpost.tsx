@@ -1,11 +1,11 @@
 import React from 'react'
 import { PageViewer, cleanPage, types } from 'react-bricks/frontend'
 import { useReactBricksContext } from 'react-bricks/frontend'
-import Layout from '../components/layout'
-import Seo from '../components/seo'
-import ErrorNoKeys from '../components/errorNoKeys'
-import ErrorNoHeader from '../components/errorNoHeader'
-import ErrorNoFooter from '../components/errorNoFooter'
+import Layout from '../../components/layout'
+import Seo from '../../components/seo'
+import ErrorNoKeys from '../../components/errorNoKeys'
+import ErrorNoHeader from '../../components/errorNoHeader'
+import ErrorNoFooter from '../../components/errorNoFooter'
 
 interface ReactBricksPageProps {
   pageContext: {
@@ -19,7 +19,7 @@ interface ReactBricksPageProps {
   }
 }
 
-const Page: React.FC<ReactBricksPageProps> = ({
+const Blogpost: React.FC<ReactBricksPageProps> = ({
   pageContext: {
     page,
     header,
@@ -68,4 +68,4 @@ const Page: React.FC<ReactBricksPageProps> = ({
   )
 }
 
-export default Page
+export default Blogpost

@@ -55,8 +55,8 @@ exports.createPages = async ({ actions: { createPage } }) => {
       'No published page was found. Please, create at least one page from the /admin interface.'
     )
     createPage({
-      path: `/`,
-      component: require.resolve('./src/templates/page.tsx'),
+      path: `/blog/`,
+      component: require.resolve('./src/pages/templates/blogpost.tsx'),
       context: {
         page: null,
         header: header,

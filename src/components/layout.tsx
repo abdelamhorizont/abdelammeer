@@ -13,7 +13,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <div
       className={`${isDarkColorMode ? 'dark' : 'light'} ${styles.container}`}
     >
-      <main className={styles.childrenContainer}>{children}</main>
+      <div><h1>abdelammeer</h1></div>
+      <main className={styles.childrenContainer}>
+
+        {children}
+        </main>
     </div>
   )
 }

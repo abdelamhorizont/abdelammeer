@@ -2,8 +2,8 @@ import { types } from 'react-bricks/frontend'
 
 const pageTypes: types.IPageType[] = [
   {
-    name: 'page',
-    pluralName: 'pages',
+    name: 'blogpost',
+    pluralName: 'blogposts',
     defaultLocked: false,
     defaultStatus: types.PageStatus.Published,
     defaultLanguage: 'en',
