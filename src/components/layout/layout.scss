@@ -1,19 +1,27 @@
-.navigation{
+main{
+    div{
+        a{
+            display: none;
+        }
+    }
+}
 
-    header{
+.navigation {
+
+    header {
         width: 100%;
     }
 
-    a{
+    a {
         color: aliceblue;
     }
 
-    ul{
+    ul {
         display: flex;
         justify-content: space-between;
         text-transform: uppercase;
 
-        li{
+        li {
             width: 100%;
             border-radius: 1rem;
             padding: 0.1rem;
@@ -21,30 +29,30 @@
             display: flex;
             justify-content: center;
         }
-        
-        #space{
-            background-color:darkred;
+
+        #space {
+            background-color: darkred;
         }
-   
-        #blog{
+
+        #blog {
             background-color: blue;
         }
-   
-        #work{
-            background-color:rgb(100, 255, 0);
+
+        #work {
+            background-color: rgb(100, 255, 0);
         }
-        
+
     }
 
-    #logo{
+    #logo {
         display: flex;
         justify-content: center;
         border-radius: 1rem;
         padding: 0.1rem;
 
-        background-color:lavenderblush;
+        background-color: lavenderblush;
 
-        a{
+        a {
             color: black;
         }
 
