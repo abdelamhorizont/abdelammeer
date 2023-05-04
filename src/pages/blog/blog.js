@@ -8,7 +8,7 @@ import Blogpostcover from '../../components/blogpostcover/blogpostcover'
 
 import './blog.scss'
 
-const apiKey = process.env.API_KEY
+const apiKey = process.env.API_KEY ||  development.env.API_KEY
 
 export default function Blog() {
 
