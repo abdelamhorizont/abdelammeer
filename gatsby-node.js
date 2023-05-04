@@ -34,7 +34,7 @@ exports.createPages = async ({ actions: { createPage } }) => {
 
     createPage({
       path: `/`,
-      component: require.resolve('./src/templates/blogpost.tsx'),
+      component: require.resolve('./src/pages/templates/blogpost.tsx'),
       context: {
         page: null,
         header: null,
@@ -84,7 +84,7 @@ exports.createPages = async ({ actions: { createPage } }) => {
     .forEach((page) => {
       createPage({
         path: page.slug === '/' ? page.slug : `/${page.slug}/`,
-        component: require.resolve('./src/templates/blogpost.tsx'),
+        component: require.resolve('./src/pages/templates/blogpost.tsx'),
         context: {
           page: page,
           header: header,
