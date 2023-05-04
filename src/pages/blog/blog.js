@@ -8,17 +8,20 @@ import Blogpostcover from '../../components/blogpostcover/blogpostcover'
 
 import './blog.scss'
 
-const appId = process.env.GATSBY_APP_ID
 const apiKey = process.env.API_KEY
 
 export default function Blog() {
 
     const [page, setPage] = useState('')
 
-    fetchPages(apiKey, { type: 'blogPost' }).then((data) => {
-        setPage(data)
-        // console.log(page)
-    })    
+
+    useEffect(() => {
+        fetchPages(apiKey, { type: 'blogPost' }).then((data) => {
+            setPage(data)
+            console.log(page)
+        })
+    }, [])
+
 
     // fetchPage('butterfly', apiKey).then((data) => {
     //     const myPage = cleanPage(data, pageTypes, bricks)
@@ -28,7 +31,7 @@ export default function Blog() {
     return (
         <Layout>
             <Div className='blog'>
-                <Link to={"/blog/" + page[0]?.slug }>
+                <Link to={"/blog/" + page[0]?.slug}>
                     <Blogpostcover title={page[0]?.name} />
                 </Link>
                 <Link to="/blog/blogpost/blogpost">
